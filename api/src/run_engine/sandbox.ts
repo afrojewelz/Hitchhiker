@@ -113,7 +113,7 @@ export class Sandbox {
     }
 
     readFile(file: string): any {
-        return this.readFileByReader(file, f => fs.readFileSync(f, 'utf8'));
+        return this.readFileByReader(file, f => fs.readFileSync(f));
     }
 
     readFileByReader(file: string, reader: (file: string) => any): any {
